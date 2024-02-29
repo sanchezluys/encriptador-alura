@@ -33,6 +33,13 @@ function btnEncriptar()
 
 }
 
+function btnDesencriptar() {
+    const texto = desencriptar(campoTexto.value);
+    console.log(texto);
+    campoMensaje.value = texto;
+
+}
+
 function encriptar(fraseEncriptada)
 {
     for(let i=0; i< matriz.length; i++)
@@ -43,6 +50,19 @@ function encriptar(fraseEncriptada)
             fraseEncriptada = fraseEncriptada.replaceAll(
                 matriz[i][0],
                 matriz[i][1]
+            );
+        }
+    }
+    return fraseEncriptada;
+}
+
+function desencriptar(fraseEncriptada) {
+    for (let i = 0; i < matriz.length; i++) {
+        console.log(`Barriendo la matriz, i=${i}`);
+        if (fraseEncriptada.includes(matriz[i][1])) {
+            fraseEncriptada = fraseEncriptada.replaceAll(
+                matriz[i][1],
+                matriz[i][0]
             );
         }
     }
