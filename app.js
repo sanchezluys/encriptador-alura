@@ -3,4 +3,6 @@
 //  versión 1.0 Feb 2024
 //  Proyecto: encriptador      
 //  archivo: app.js
-var uno=1;
+
+console.log('hola, se inicia app.js');
+
