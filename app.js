@@ -4,5 +4,5 @@
 //  Proyecto: encriptador      
 //  archivo: app.js
 
-console.log('hola, se inicia app.js');
+console.log('log: Se inicia app.js sin problemas...');
 
