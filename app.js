@@ -82,7 +82,13 @@ function inicializar(){
     texto2.value="";
     // se inicializan los placeholders
     texto1.placeholder=".....";
-    texto2.placeholder = "Ingrese el texto a encriptar";
+    texto2.placeholder = "Ingrese el texto aqui";
+    // se inicializa el titulo
+    titulo = document.getElementById('titulo');
+    titulo.textContent = "Challenge Alura Encripta G6 One Next Oracle";
+    // se inicializa el rodapie
+    rodapie = document.getElementById('rodapie');
+    rodapie.textContent = '\u00A9' + " Copyleft Luis Sánchez sanchezluys 2024";
 
 }
 

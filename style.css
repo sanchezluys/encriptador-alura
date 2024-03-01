@@ -9,5 +9,16 @@
 /* el fondo es el mismo para todas las vistas */
 html{
     background-color: D8DFE8;
+
+}
+#rodapie, #titulo{
+    text-align: center;
 }
 
+
+/* es necesrio definir 3 tipos de estilos para cada tipo de pantalla
+/* CASO 1: PANTALLAS GRANDES
+
+/* CASO 2: TABLETS
+
+/* CASO 3: CELULAR
