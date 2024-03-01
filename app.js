@@ -11,6 +11,10 @@ console.log('log: Se inicia app.js sin problemas...');
 const campoTexto    =   document.querySelector("#textoAencriptar");
 const campoMensaje  =   document.querySelector("#textoMensaje");
 
+
+// se inicializa la vista
+inicializar();
+
 console.log(campoTexto, campoMensaje);
 
 //** Se define la matriz */
@@ -67,4 +71,8 @@ function desencriptar(fraseEncriptada) {
         }
     }
     return fraseEncriptada;
+}
+
+function inicializar(){
+    // cada vez que inicialice se hacen los ajustes
 }
