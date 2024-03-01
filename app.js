@@ -76,3 +76,23 @@ function desencriptar(fraseEncriptada) {
 function inicializar(){
     // cada vez que inicialice se hacen los ajustes
 }
+
+function btnCopiar() {
+    //
+    console.log('ingreso a copiar');
+    const elementoTexto = document.getElementById('textoMensaje');
+
+    if (elementoTexto) {
+        // Copia el valor del elemento al portapapeles
+        const valor = elementoTexto.value;
+        navigator.clipboard.writeText(valor)
+            .then(() => {
+                alert(`¡Valor "${valor}" copiado al portapapeles!`);
+            })
+            .catch((error) => {
+                console.error('Error al copiar al portapapeles:', error);
+            });
+    } else {
+        alert('No se encontró ningún elemento con el ID "textoCampo".');
+    }
+}
