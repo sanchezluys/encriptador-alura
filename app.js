@@ -75,6 +75,15 @@ function desencriptar(fraseEncriptada) {
 
 function inicializar(){
     // cada vez que inicialice se hacen los ajustes
+    // limpiamos lo dos campos de texto
+    texto1 = document.getElementById('textoMensaje');
+    texto2 = document.getElementById('textoAencriptar');
+    texto1.value="";
+    texto2.value="";
+    // se inicializan los placeholders
+    texto1.placeholder=".....";
+    texto2.placeholder = "Ingrese el texto a encriptar";
+
 }
 
 function btnCopiar() {
