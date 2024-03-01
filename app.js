@@ -20,9 +20,9 @@ console.log(campoTexto, campoMensaje);
 //** Se define la matriz */
 const matriz=
     [
-        ["a","ai"],         //indice 0
-        ["e","enter"],      //indice 1
-        ["i","imes"],       //indice 2
+        ["e","enter"],         //indice 0
+        ["i","imes"],      //indice 1
+        ["a","ai"],       //indice 2
         ["o","ober"],       //indice 3
         ["u","ufat"],        //indice 4
     ];
