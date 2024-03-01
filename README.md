@@ -1,4 +1,9 @@
-### Challenge Alura Encripta
+# Challenger Alura Encripta
+
+![](https://raw.githubusercontent.com/sanchezluys/encriptador-alura/main/images/Logodesktop.png)
+
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+
 
 ### Retos cumplidos
 
@@ -15,11 +20,7 @@
   - [ ] GFM task list 4-1
   - [ ] GFM task list 4-2
 
-# Editor.md
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
 **Tabla de Contenidos**
 
@@ -38,20 +39,6 @@
 ##### H5 header
 
 ###### H6 header
-
-# Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-
-## Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-
-### Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-
-#### Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
-
-##### Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-
-###### Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-
-
 
 ### Characters
 
@@ -112,47 +99,6 @@ Code Blocks (Preformatted text):
     | Content Cell  | Content Cell  |
 
 #### Javascript
-
-```javascript
-function test(){
- console.log("Hello world!");
-}
- 
-(function(){
-    var box = function(){
-        return box.fn.init();
-    };
-
-    box.prototype = box.fn = {
-        init : function(){
-            console.log('box.init()');
-
-   return this;
-        },
-
-  add : function(str){
-   alert("add", str);
-
-   return this;
-  },
-
-  remove : function(str){
-   alert("remove", str);
-
-   return this;
-  }
-    };
-    
-    box.fn.init.prototype = box.fn;
-    
-    window.box =box;
-})();
-
-var testBox = box();
-testBox.add("jQuery").remove("jQuery");
-```
-
-
 
 ### Images
 
