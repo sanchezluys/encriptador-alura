@@ -44,6 +44,7 @@ html{
     width: 328px;     /* Largo de 328px */
     border-radius: 24px;        /* Radio de esquina de 24px */
     margin-right: 24px;         /* separacion entre botones de 24px */
+    border: 2px solid black;   /* Borde de 1px sólido y color negro */
 }
 
 .btnDesencriptar {
@@ -54,6 +55,7 @@ html{
     height: 67px;                /* Alto de 67px */
     width: 328px;                /* Largo de 328px */
     border-radius: 24px;         /* Radio de esquina de 24px */
+    border: 2px solid black;  /* Borde de 1px sólido y color negro */
 }
 #rodapie {
     text-align: center;
