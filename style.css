@@ -8,11 +8,56 @@
 
 /* el fondo es el mismo para todas las vistas */
 html{
-    background-color: D8DFE8;
+    background-color: #D8DFE8; /* color de fondo del diseño figma */
+    font-family: 'Inter';
 
 }
-#rodapie, #titulo{
+.main{
     text-align: center;
+}
+#textoAencriptar{
+    background-color: transparent;
+    border: none;
+    font-family: 'Inter', sans-serif;      /* Fallback a sans-serif si Inter no está disponible */
+    font-size: 32px;                       /* Tamaño de letra 32px */
+    color: #0A3871
+}
+#textoAencriptar::placeholder{
+    color: #0A3871;
+}
+#titulo{
+    text-align: center; /* Centra el texto */
+    color: #0A3871;      /* Color azul del diseño figma */
+    font-size: 2em;     /* Tamaño de letra h1 */
+}
+
+.btnEncriptar, .btnDesencriptar{
+    background-color: red;
+}
+
+.btnEncriptar{
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: #0A3871;
+    height: 67px;     /* Alto de 67px */
+    width: 328px;     /* Largo de 328px */
+    border-radius: 24px;        /* Radio de esquina de 24px */
+    margin-right: 24px;         /* separacion entre botones de 24px */
+}
+
+.btnDesencriptar {
+    color:#0A3871;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: #D8DFE8;
+    height: 67px;                /* Alto de 67px */
+    width: 328px;                /* Largo de 328px */
+    border-radius: 24px;         /* Radio de esquina de 24px */
+}
+#rodapie {
+    text-align: center;
+    color: #0A3871;
 }
 
 
