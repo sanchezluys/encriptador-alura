@@ -30,8 +30,22 @@ const matriz=
 function btnEncriptar()
 {
     const texto= encriptar(campoTexto.value);
-    console.log(texto);
     campoMensaje.value=texto;
+    campoMensaje.hidden=false;
+    campoMensaje.rows=10;
+    // se oculta el muñeco
+    muneco=document.querySelector("#muneco"); 
+    muneco.hidden=true;
+    // se oultan los mensajes
+    mensajeTitulo = document.querySelector("#mensajeSalidaTitulo"); 
+    mensajeTexto = document.querySelector("#mensajeSalidaTexto"); 
+    mensajeTitulo.hidden=true;
+    mensajeTexto.hidden=true;
+    // se habilita el boton de copiar
+    botonCopiar = document.getElementById('btnCopiar');
+    botonCopiar.style.display = "inline";
+
+
 
 }
 
@@ -39,6 +53,17 @@ function btnDesencriptar() {
     const texto = desencriptar(campoTexto.value);
     console.log(texto);
     campoMensaje.value = texto;
+    campoMensaje.hidden = false;
+    muneco = document.querySelector("#muneco");
+    muneco.hidden = true;
+    // se oultan los mensajes
+    mensajeTitulo = document.querySelector("#mensajeSalidaTitulo");
+    mensajeTexto = document.querySelector("#mensajeSalidaTexto");
+    mensajeTitulo.hidden = true;
+    mensajeTexto.hidden = true;
+    // se habilita el boton de copiar
+    botonCopiar = document.getElementById('btnCopiar');
+    botonCopiar.style.display = "inline";
 
 }
 
@@ -99,11 +124,23 @@ function inicializar(){
     // se inicializa el texto de salida info
     textoSalidaTexto = document.getElementById('mensajeSalidaTexto');
     textoSalidaTexto.textContent = "Ingresa el texto que desees encriptar o desencriptar.";
+    // 
+    muneco.hidden = false;
+    mensajeTitulo = document.querySelector("#mensajeSalidaTitulo");
+    mensajeTexto = document.querySelector("#mensajeSalidaTexto");
+    mensajeTitulo.hidden = false;
+    mensajeTexto.hidden = false;
 
+    // se esconde el mensaje encriptado
+    texto1.hidden=true;
+    // se esconde el boton de copiar
+    btnCopiar = document.getElementById('btnCopiar');
+    btnCopiar.innerText ="Copiar";
+    btnCopiar.style.display = "none";
     
 }
 
-function btnCopiar() {
+function CopiarPortapapeles() {
     //
     console.log('ingreso a copiar');
     const elementoTexto = document.getElementById('textoMensaje');
@@ -113,12 +150,16 @@ function btnCopiar() {
         const valor = elementoTexto.value;
         navigator.clipboard.writeText(valor)
             .then(() => {
+                inicializar();
                 alert(`¡Valor "${valor}" copiado al portapapeles!`);
+                
             })
             .catch((error) => {
                 console.error('Error al copiar al portapapeles:', error);
             });
-    } else {
+    } 
+    else 
+    {
         alert('No se encontró ningún elemento con el ID "textoCampo".');
     }
 }

@@ -48,7 +48,7 @@ html{
     /* Fallback a sans-serif si Inter no está disponible */
     font-size: 32px;    /* Tamaño de letra 32px */
     color: #0A3871;
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin: 10px;
     padding: 10px;
@@ -103,6 +103,8 @@ html{
 .muneco{
     width: auto;   /* Ancho de la imagen */
     height: auto;  /* Alto de la imagen */
+    margin: 50px;
+    padding: 10px;
 }
 
 .mensajeSalidaTitulo{
@@ -127,6 +129,7 @@ html{
 .btnCopiar{
     width: 90%;
     text-align: center;
+    margin: 10px;
 }
 
 .btnDesencriptar:active, .btnCopiar:active  {
@@ -141,7 +144,7 @@ html{
     background-color: white;
     border: 2px solid blue;
     border-radius: 32px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
+    box-shadow: 2px 2px 5px rgba(29, 27, 27, 0.247);
         /* Cambia los valores según necesites 400x 944*/
     width: 100%;
         /* Ancho de la imagen */
@@ -153,6 +156,11 @@ html{
     width: 70%;
     background-color: transparent;
     border: none;
+    font-size: 24px;
+    color: #495057;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
 .botones{
