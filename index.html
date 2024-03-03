@@ -20,42 +20,47 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <p id="titulo">Challenge Alura Encripta G6-One Oracle</p>
-            <div class="caja">
-                <h1><img src="images/Logodesktop.png" alt="Logo Alura"></h1>
-            </div>
-        </header>
-
         <main class="main">
-            <div class="container">
+            <div class="cuerpoPagina">
                 
-                <section id="textosBotones">
-                    <textarea name="" id="textoAencriptar" placeholder="Texto a encriptar" class="campo-texto"></textarea>
+                <section class="textoBotones" id="textosBotones">
+                    
+                    <div class="logo" id="logo">
+                        <img src="images/Logodesktop.png" alt="Logo Alura">
+                    </div>
+                    <p class="titulo" id="titulo">Challenge Alura Encripta G6-One Oracle</p>
+                    
+                    
+                    
+                    <textarea id="textoAencriptar" placeholder="Texto a encriptar" class="textoAencriptar"></textarea>
                     
                     <div class="botones">
-                        <p id="advertencia">advertencia</p>
+                        <p id="advertencia" class="advertencia">advertencia</p>
                         <button class="btnEncriptar" onclick="btnEncriptar();">Encriptar</button>
                         <button class="btnDesencriptar" onclick="btnDesencriptar();">Desencriptar</button>
                     </div>
                 </section>
 
-                <section class="campoMensaje" id="textoSalida">
-                    <textarea name="" id="textoMensaje" class="mensaje" placeholder="_"></textarea>
+                <section class="textoSalida" id="textoSalida">
+                    <textarea id="textoMensaje" class="mensaje" placeholder="_"></textarea>
 
-                    <img id="muneco" src="images/Muñecodesktop.png" alt="Muñeco Mirando con Lupa un Ruby">
+                    <img id="muneco" class="muneco" src="images/Muñecodesktop.png" alt="Muñeco Mirando con Lupa un Ruby">
+                    
+                    
+                    <p id="mensajeSalidaTitulo" class="mensajeSalidaTitulo">titulo texto</p>
 
+                    <p id="mensajeSalidaTexto" class="mensajeSalidaTexto">texto</p>
                     <div class="botonCopiar">
                         <button class="btnCopiar" onclick="btnCopiar();">Copiar al portapapeles</button>
                     </div>
                 </section>
-            </div>
-            
 
+                
+
+            </div>
         </main>
         <footer>
-            <p id="rodapie">&#169; Copyleft sanchezluys 2024</p>
-            
+            <p id="rodapie" class="rodapie">&#169; Copyleft sanchezluys 2024</p>
         </footer>
     </body>
     <!-- Agregando el javascript -->

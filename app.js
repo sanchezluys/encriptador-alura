@@ -4,18 +4,17 @@
 //  Proyecto: encriptador      
 //  archivo: app.js
 //********************** */
-console.log('log: Se inicia app.js sin problemas...');
-
-// declaramos las variables y constantes
+// DECLARACION DE VARIABLES Y CONSTANTES
+/******************************** */
 
 const campoTexto    =   document.querySelector("#textoAencriptar");
 const campoMensaje  =   document.querySelector("#textoMensaje");
 
-
-// se inicializa la vista
+/********************************* */
+/**** SE INICIALIZA LA VISTA **** */
+/******************************** */
 inicializar();
 
-console.log(campoTexto, campoMensaje);
 
 //** Se define la matriz */
 const matriz=
@@ -27,7 +26,6 @@ const matriz=
         ["u","ufat"],        //indice 4
     ];
 
-console.log(matriz);
 
 function btnEncriptar()
 {
@@ -83,6 +81,9 @@ function inicializar(){
     // se inicializan los placeholders
     texto1.placeholder=".....";
     texto2.placeholder = "Ingrese el texto aqui";
+    texto2.cols = 5; // 30 columnas
+    texto2.rows = 5; // 30 filas
+
     // se inicializa el titulo
     titulo = document.getElementById('titulo');
     titulo.textContent = "Challenge Alura Encripta G6 One Next Oracle";
@@ -92,7 +93,14 @@ function inicializar(){
     // se inicializa el rodapie
     rodapie = document.getElementById('rodapie');
     rodapie.textContent = '\u00A9' + " Copyleft Luis Sánchez sanchezluys 2024";
+    // se inicializa el texto titulo de salida
+    textoSalidaTitulo = document.getElementById('mensajeSalidaTitulo');
+    textoSalidaTitulo.textContent = "Ningún mensaje fue encontrado";
+    // se inicializa el texto de salida info
+    textoSalidaTexto = document.getElementById('mensajeSalidaTexto');
+    textoSalidaTexto.textContent = "Ingresa el texto que desees encriptar o desencriptar.";
 
+    
 }
 
 function btnCopiar() {

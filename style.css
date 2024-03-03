@@ -11,44 +11,70 @@ html{
     background-color: #D8DFE8; /* color de fondo del diseño figma */
     margin: 0;
     padding: 0;
-    width: 90vw;
-    /* Ancho de la pantalla */
-    height: 60vh;
-    /* Alto de la pantalla */
-    /*overflow: hidden; */
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden;  */
 }
 
-.main{
+
+
+/* **************************  */
+/* **** MAIN EN EL BODY ****** */
+/*******************************/
+.logo {
+    display: inline;
+}
+
+.titulo {
+    text-align: center;
+    /* Centra el texto */
+    color: #0A3871;
+    /* Color azul del diseño figma */
+    font-size: 2em;
+    /* Tamaño de letra h1 */
+    display: inline;
+    width: auto;
+}
+.cuerpoPagina{
+    display: flex;
+    margin: 5px;
     text-align: center;
 }
-#textoAencriptar{
+
+.textoAencriptar {
     background-color: transparent;
     border: none;
-    font-family: 'Inter', sans-serif;      /* Fallback a sans-serif si Inter no está disponible */
-    font-size: 32px;                       /* Tamaño de letra 32px */
+    font-family: 'Inter', sans-serif;
+    /* Fallback a sans-serif si Inter no está disponible */
+    font-size: 32px;    /* Tamaño de letra 32px */
     color: #0A3871;
-    width: 70%;
-}
-#textoAencriptar::placeholder{
-    color: #0A3871;
-}
-#titulo{
-    text-align: center; /* Centra el texto */
-    color: #0A3871;      /* Color azul del diseño figma */
-    font-size: 2em;     /* Tamaño de letra h1 */
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 
-#advertencia{
-          /* Centra el texto */
+.textoAencriptar::placeholder {
+    color: #0A3871;
+    text-align: center;
+}
+
+.textoBotones {
+    flex: 70%;
+    /* height: 100vh; */
+}
+/************************************/
+
+.advertencia{
     font-size: 12px;
     color: #495057;     /* color y tamaño del figma */
-
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 5px;
 }
-
 .btnEncriptar:hover, .btnDesencriptar:hover, .btnCopiar{
     cursor: pointer; /* Cambia el cursor a una mano cuando se pase por encima */
 }
-
 .btnEncriptar{
     color: white;
     font-size: 16px;
@@ -59,13 +85,10 @@ html{
     border-radius: 24px;        /* Radio de esquina de 24px */
     margin-right: 24px;         /* separacion entre botones de 24px */
     border: 2px solid black;   /* Borde de 1px sólido y color negro */
-   
 }
-
 .btnEncriptar:active{
     transform: translateY(2px);      /* Mueve el botón hacia abajo 1px al presionarlo */
 }
-
 .btnDesencriptar, .btnCopiar {
     color:#0A3871;
     font-size: 16px;
@@ -77,11 +100,30 @@ html{
     border: 2px solid black;  /* Borde de 1px sólido y color negro */
     
 }
-
-#muneco{
+.muneco{
     width: auto;   /* Ancho de la imagen */
     height: auto;  /* Alto de la imagen */
 }
+
+.mensajeSalidaTitulo{
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #343A40;
+    text-align: center;
+    margin: 5px;
+}
+
+.mensajeSalidaTexto {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #495057;
+    text-align: center;
+    margin: 5px;
+}
+
+
+
 .btnCopiar{
     width: 90%;
     text-align: center;
@@ -91,19 +133,10 @@ html{
     transform: translateY(2px);
     /* Mueve el botón hacia abajo 1px al presionarlo */
 }
-#rodapie {
-    text-align: center;
-    color: #0A3871;
-}
-.container {
-    display: flex;
-}
 
-#textosBotones{
-    flex: 70%;
-    height: 100vh;
-}
-#textoSalida{
+
+
+.textoSalida{
     flex: 30%;
     background-color: white;
     border: 2px solid blue;
@@ -112,19 +145,29 @@ html{
         /* Cambia los valores según necesites 400x 944*/
     width: 100%;
         /* Ancho de la imagen */
-    height: 70vh;
+    height: 100%;
         /* Alto de la imagen */
 }
 
-#textoMensaje{
+.mensaje{
     width: 70%;
     background-color: transparent;
     border: none;
 }
 
 .botones{
-    margin-top: 30vh;
+    margin-top: 10%;
 }
+
+/*** FOOTER *******/
+/**********************/
+.rodapie {
+    text-align: center;
+    color: #0A3871;
+    margin-top: 2%;
+}
+
+
 
 /* es necesrio definir 3 tipos de estilos para cada tipo de pantalla
 /* CASO 1: PANTALLAS GRANDES
