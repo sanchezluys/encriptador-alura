@@ -39,10 +39,7 @@ html{
 }
 
 .btnEncriptar:hover, .btnDesencriptar:hover, .btnCopiar{
-   
-            cursor: pointer;
-            /* Cambia el cursor a una mano cuando se pase por encima */
-     
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pase por encima */
 }
 
 .btnEncriptar{
@@ -75,10 +72,8 @@ html{
 }
 
 #muneco{
-    width: 336px;
-        /* Ancho de la imagen */
-        height: 304px;
-        /* Alto de la imagen */
+    width: 336px;   /* Ancho de la imagen */
+    height: 304px;  /* Alto de la imagen */
 }
 .btnCopiar{
     width: 336px;
