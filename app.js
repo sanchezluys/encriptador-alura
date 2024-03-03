@@ -6,27 +6,21 @@
 //********************** */
 // DECLARACION DE VARIABLES Y CONSTANTES
 /******************************** */
-
 const campoTexto    =   document.querySelector("#textoAencriptar");
 const campoMensaje  =   document.querySelector("#textoMensaje");
-
 /********************************* */
 /**** SE INICIALIZA LA VISTA **** */
 /******************************** */
 inicializar();
-
-
 //** Se define la matriz */
 const matriz=
     [
-        ["e","enter"],         //indice 0
-        ["i","imes"],      //indice 1
-        ["a","ai"],       //indice 2
-        ["o","ober"],       //indice 3
-        ["u","ufat"],        //indice 4
+        ["e","enter"],          //indice 0
+        ["i","imes"],           //indice 1
+        ["a","ai"],             //indice 2
+        ["o","ober"],           //indice 3
+        ["u","ufat"],           //indice 4
     ];
-
-
 function btnEncriptar()
 {
     const texto= encriptar(campoTexto.value);
@@ -48,7 +42,6 @@ function btnEncriptar()
 
 
 }
-
 function btnDesencriptar() {
     const texto = desencriptar(campoTexto.value);
     console.log(texto);
@@ -66,7 +59,6 @@ function btnDesencriptar() {
     botonCopiar.style.display = "inline";
 
 }
-
 function encriptar(fraseEncriptada)
 {
     for(let i=0; i< matriz.length; i++)
@@ -82,7 +74,6 @@ function encriptar(fraseEncriptada)
     }
     return fraseEncriptada;
 }
-
 function desencriptar(fraseEncriptada) {
     for (let i = 0; i < matriz.length; i++) {
         console.log(`Barriendo la matriz, i=${i}`);
@@ -95,7 +86,6 @@ function desencriptar(fraseEncriptada) {
     }
     return fraseEncriptada;
 }
-
 function inicializar(){
     // cada vez que inicialice se hacen los ajustes
     // limpiamos lo dos campos de texto
@@ -139,7 +129,6 @@ function inicializar(){
     btnCopiar.style.display = "none";
     
 }
-
 function CopiarPortapapeles() {
     //
     console.log('ingreso a copiar');
@@ -162,4 +151,10 @@ function CopiarPortapapeles() {
     {
         alert('No se encontró ningún elemento con el ID "textoCampo".');
     }
+}
+function validarTexto(elemento) {
+    var texto = elemento.value;
+    var textoSinAcentos = texto.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Remueve los acentos
+    var textoSoloMinusculas = textoSinAcentos.toLowerCase().replace(/[^a-z\s]/g, ""); // Remueve caracteres especiales excepto espacios y convierte a minúsculas
+    elemento.value = textoSoloMinusculas; // Actualiza el valor del textarea
 }

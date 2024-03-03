@@ -5,7 +5,6 @@
     Proyecto: encriptador
     archivo: style.css
 */
-
 /* el fondo es el mismo para todas las vistas */
 html{
     background-color: #D8DFE8; /* color de fondo del diseño figma */
@@ -15,16 +14,12 @@ html{
     height: 100vh;
     /* overflow: hidden;  */
 }
-
-
-
 /* **************************  */
 /* **** MAIN EN EL BODY ****** */
 /*******************************/
 .logo {
     display: inline;
 }
-
 .titulo {
     text-align: center;
     /* Centra el texto */
@@ -40,7 +35,6 @@ html{
     margin: 5px;
     text-align: center;
 }
-
 .textoAencriptar {
     background-color: transparent;
     border: none;
@@ -53,18 +47,15 @@ html{
     margin: 10px;
     padding: 10px;
 }
-
 .textoAencriptar::placeholder {
     color: #0A3871;
     text-align: center;
 }
-
 .textoBotones {
     flex: 70%;
     /* height: 100vh; */
 }
 /************************************/
-
 .advertencia{
     font-size: 12px;
     color: #495057;     /* color y tamaño del figma */
@@ -106,7 +97,6 @@ html{
     margin: 50px;
     padding: 10px;
 }
-
 .mensajeSalidaTitulo{
     font-size: 24px;
     font-family: 'Inter', sans-serif;
@@ -115,7 +105,6 @@ html{
     text-align: center;
     margin: 5px;
 }
-
 .mensajeSalidaTexto {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -123,22 +112,15 @@ html{
     text-align: center;
     margin: 5px;
 }
-
-
-
 .btnCopiar{
     width: 90%;
     text-align: center;
     margin: 10px;
 }
-
 .btnDesencriptar:active, .btnCopiar:active  {
     transform: translateY(2px);
     /* Mueve el botón hacia abajo 1px al presionarlo */
 }
-
-
-
 .textoSalida{
     flex: 30%;
     background-color: white;
@@ -151,7 +133,6 @@ html{
     height: 100%;
         /* Alto de la imagen */
 }
-
 .mensaje{
     width: 70%;
     background-color: transparent;
@@ -162,11 +143,9 @@ html{
     padding-top: 20%;
     padding-bottom: 20%;
 }
-
 .botones{
     margin-top: 10%;
 }
-
 /*** FOOTER *******/
 /**********************/
 .rodapie {
@@ -174,12 +153,7 @@ html{
     color: #0A3871;
     margin-top: 2%;
 }
-
-
-
 /* es necesrio definir 3 tipos de estilos para cada tipo de pantalla
 /* CASO 1: PANTALLAS GRANDES
-
 /* CASO 2: TABLETS
-
 /* CASO 3: CELULAR

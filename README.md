@@ -15,21 +15,21 @@
 ### Requisitos del reto
 
 
-- [ ] Partes de la vista
+- [x] Partes de la vista
   - [x] Campo de entrada de texto
   - [x] Campo de salida del texto encriptado
-- [ ] Validaciones
-  - [ ] Solo minúsculas
-  - [ ] Solo letras, nada de caracteres
+- [x] Validaciones
+  - [x] Solo minúsculas
+  - [x] Solo letras, nada de caracteres
 - [ ] Responsivo
-  - [ ] Versión desktop
+  - [x] Versión desktop
   - [ ] Versión Tablet
   - [ ] Versión celular
-- [ ] Estilos
-  - [ ] Colores de fondo
-  - [ ] Formas
-  - [ ] Tipos de letras
-  - [ ] Estilo de botones
+- [x] Estilos de acuerdo al diseño en Figma
+  - [x] Colores de fondo
+  - [x] Formas
+  - [x] Tipos de letras
+  - [x] Estilo de botones
 - [ ] Extras
   - [x] Favicon Sonix
   - [ ] 
@@ -41,6 +41,7 @@ Versiones:
 
     | Número        |  Fecha        |
     | ------------- | ------------- |
+    | 1.0.1         | 3/03/2024     |
     | 1.0           | 2/03/2024     |
     
 
@@ -53,7 +54,8 @@ Versiones:
 | `encriptar()`      | Encripta el mensaje.       |
 | `desencriptar()`   | Desencripta el Mensaje     |
 | `inicializar()`   | Inicializa la vista HTML     |
-| `btnCopiar()`   | Copia en resultado de la encriptación o desencriptación en el portapapeles del navegador     |
+| `copiarPortapapeles()`   | Copia en resultado de la encriptación o desencriptación en el portapapeles del navegador     |
+| `validarTexto(elemento)`   | Válida y solo permite letras minúsculas, sin acentos ni caracteres especiales     |
 
 ### QR de contacto:
 

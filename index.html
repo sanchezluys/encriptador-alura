@@ -22,41 +22,27 @@
     <body>
         <main class="main">
             <div class="cuerpoPagina">
-                
                 <section class="textoBotones" id="textosBotones">
-                    
                     <div class="logo" id="logo">
                         <img src="images/Logodesktop.png" alt="Logo Alura">
                     </div>
                     <p class="titulo" id="titulo">Challenge Alura Encripta G6-One Oracle</p>
-                    
-                    
-                    
-                    <textarea id="textoAencriptar" placeholder="Texto a encriptar" class="textoAencriptar"></textarea>
-                    
+                    <textarea id="textoAencriptar" placeholder="Texto a encriptar" class="textoAencriptar" oninput="validarTexto(this)"></textarea>
                     <div class="botones">
                         <p id="advertencia" class="advertencia">advertencia</p>
                         <button class="btnEncriptar" onclick="btnEncriptar();">Encriptar</button>
                         <button class="btnDesencriptar" onclick="btnDesencriptar();">Desencriptar</button>
                     </div>
                 </section>
-
                 <section class="textoSalida" id="textoSalida">
                     <textarea id="textoMensaje" class="mensaje" placeholder="_"></textarea>
-
                     <img id="muneco" class="muneco" src="images/Muñecodesktop.png" alt="Muñeco Mirando con Lupa un Ruby">
-                    
-                    
                     <p id="mensajeSalidaTitulo" class="mensajeSalidaTitulo">titulo texto</p>
-
                     <p id="mensajeSalidaTexto" class="mensajeSalidaTexto">texto</p>
                     <div class="botonCopiar">
                         <button class="btnCopiar" id="btnCopiar" onclick="CopiarPortapapeles();">Copiar al portapapeles</button>
                     </div>
                 </section>
-
-                
-
             </div>
         </main>
         <footer>
