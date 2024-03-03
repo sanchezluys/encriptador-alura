@@ -86,6 +86,9 @@ function inicializar(){
     // se inicializa el titulo
     titulo = document.getElementById('titulo');
     titulo.textContent = "Challenge Alura Encripta G6 One Next Oracle";
+    // se inicializa la advertencia
+    titulo = document.getElementById('advertencia');
+    titulo.textContent = "⚠️ Solo letras minúsculas y sin acentos ";
     // se inicializa el rodapie
     rodapie = document.getElementById('rodapie');
     rodapie.textContent = '\u00A9' + " Copyleft Luis Sánchez sanchezluys 2024";

@@ -28,24 +28,29 @@
         </header>
 
         <main class="main">
-            <section>
-                <textarea name="" id="textoAencriptar" placeholder="Texto a encriptar" class="campo-texto"></textarea>
-                <div class="class btn">
-                    <button class="btnEncriptar" onclick="btnEncriptar();">Encriptar</button>
-                    <button class="btnDesencriptar" onclick="btnDesencriptar();">Desencriptar</button>
-                </div>
-            </section>
-
-            <section class="campoMensaje">
-                <textarea name="" id="textoMensaje" cols="30" rows="10" class="mensaje" placeholder="_"></textarea>
-
-                <div class="class btn">
-                    <button class="btnCopiar" onclick="btnCopiar();">Copiar al portapapeles</button>
+            <div>
+                
+                <section>
+                    <textarea name="" id="textoAencriptar" placeholder="Texto a encriptar" class="campo-texto"></textarea>
                     
-                </div>
-            </section>
-            <p>main</p>
-            <h1><img src="images/Muñecodesktop.png" alt="Logo Alura"></h1>
+                    <div class="class btn">
+                        <p id="advertencia">advertencia</p>
+                        <button class="btnEncriptar" onclick="btnEncriptar();">Encriptar</button>
+                        <button class="btnDesencriptar" onclick="btnDesencriptar();">Desencriptar</button>
+                    </div>
+                </section>
+
+                <section class="campoMensaje">
+                    <textarea name="" id="textoMensaje" cols="30" rows="10" class="mensaje" placeholder="_"></textarea>
+
+                    <img id="muneco" src="images/Muñecodesktop.png" alt="Muñeco Mirando con Lupa un Ruby">
+
+                    <div class="class btn">
+                        <button class="btnCopiar" onclick="btnCopiar();">Copiar al portapapeles</button>
+                    </div>
+                </section>
+            </div>
+            
 
         </main>
         <footer>

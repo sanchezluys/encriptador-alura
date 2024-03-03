@@ -31,8 +31,18 @@ html{
     font-size: 2em;     /* Tamaño de letra h1 */
 }
 
-.btnEncriptar, .btnDesencriptar{
-    background-color: red;
+#advertencia{
+          /* Centra el texto */
+    font-size: 12px;
+    color: #495057;     /* color y tamaño del figma */
+
+}
+
+.btnEncriptar:hover, .btnDesencriptar:hover, .btnCopiar{
+   
+            cursor: pointer;
+            /* Cambia el cursor a una mano cuando se pase por encima */
+     
 }
 
 .btnEncriptar{
@@ -45,9 +55,14 @@ html{
     border-radius: 24px;        /* Radio de esquina de 24px */
     margin-right: 24px;         /* separacion entre botones de 24px */
     border: 2px solid black;   /* Borde de 1px sólido y color negro */
+   
 }
 
-.btnDesencriptar {
+.btnEncriptar:active{
+    transform: translateY(2px);      /* Mueve el botón hacia abajo 1px al presionarlo */
+}
+
+.btnDesencriptar, .btnCopiar {
     color:#0A3871;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -56,6 +71,22 @@ html{
     width: 328px;                /* Largo de 328px */
     border-radius: 24px;         /* Radio de esquina de 24px */
     border: 2px solid black;  /* Borde de 1px sólido y color negro */
+    
+}
+
+#muneco{
+    width: 336px;
+        /* Ancho de la imagen */
+        height: 304px;
+        /* Alto de la imagen */
+}
+.btnCopiar{
+    width: 336px;
+}
+
+.btnDesencriptar:active, .btnCopiar:active  {
+    transform: translateY(2px);
+    /* Mueve el botón hacia abajo 1px al presionarlo */
 }
 #rodapie {
     text-align: center;
