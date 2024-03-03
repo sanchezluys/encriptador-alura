@@ -13,12 +13,10 @@ html{
     padding: 0;
     width: 90vw;
     /* Ancho de la pantalla */
-    height: 60vh;*/
+    height: 60vh;
     /* Alto de la pantalla */
     /*overflow: hidden; */
-
 }
-
 
 .main{
     text-align: center;
