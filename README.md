@@ -15,12 +15,13 @@
 ### Requisitos del reto
 
 
-- [x] Partes de la vista
+- [x] Partes de la vista funcionales
   - [x] Campo de entrada de texto
   - [x] Campo de salida del texto encriptado
-- [x] Validaciones
+- [] Validaciones
   - [x] Solo minúsculas
   - [x] Solo letras, nada de caracteres
+  - [ ] No aceptar encriptacion de frase vacia
 - [ ] Responsivo
   - [x] Versión desktop
   - [ ] Versión Tablet
@@ -32,7 +33,7 @@
   - [x] Estilo de botones
 - [ ] Extras
   - [x] Favicon Sonix
-  - [ ] 
+  - [ ] Efectos en botones al pasar por ellos
   - [ ] 
   - [ ] 
 
