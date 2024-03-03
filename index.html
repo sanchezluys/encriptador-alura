@@ -28,24 +28,24 @@
         </header>
 
         <main class="main">
-            <div>
+            <div class="container">
                 
-                <section width="80%">
+                <section id="textosBotones">
                     <textarea name="" id="textoAencriptar" placeholder="Texto a encriptar" class="campo-texto"></textarea>
                     
-                    <div class="class btn">
+                    <div class="botones">
                         <p id="advertencia">advertencia</p>
                         <button class="btnEncriptar" onclick="btnEncriptar();">Encriptar</button>
                         <button class="btnDesencriptar" onclick="btnDesencriptar();">Desencriptar</button>
                     </div>
                 </section>
 
-                <section class="campoMensaje">
-                    <textarea name="" id="textoMensaje" cols="30" rows="10" class="mensaje" placeholder="_"></textarea>
+                <section class="campoMensaje" id="textoSalida">
+                    <textarea name="" id="textoMensaje" class="mensaje" placeholder="_"></textarea>
 
                     <img id="muneco" src="images/Muñecodesktop.png" alt="Muñeco Mirando con Lupa un Ruby">
 
-                    <div class="class btn">
+                    <div class="botonCopiar">
                         <button class="btnCopiar" onclick="btnCopiar();">Copiar al portapapeles</button>
                     </div>
                 </section>

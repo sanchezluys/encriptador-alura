@@ -9,9 +9,17 @@
 /* el fondo es el mismo para todas las vistas */
 html{
     background-color: #D8DFE8; /* color de fondo del diseño figma */
-    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+    /* Ancho de la pantalla */
+    height: 60vh;*/
+    /* Alto de la pantalla */
+    /*overflow: hidden; */
 
 }
+
+
 .main{
     text-align: center;
 }
@@ -20,7 +28,8 @@ html{
     border: none;
     font-family: 'Inter', sans-serif;      /* Fallback a sans-serif si Inter no está disponible */
     font-size: 32px;                       /* Tamaño de letra 32px */
-    color: #0A3871
+    color: #0A3871;
+    width: 70%;
 }
 #textoAencriptar::placeholder{
     color: #0A3871;
@@ -72,11 +81,12 @@ html{
 }
 
 #muneco{
-    width: 336px;   /* Ancho de la imagen */
-    height: 304px;  /* Alto de la imagen */
+    width: auto;   /* Ancho de la imagen */
+    height: auto;  /* Alto de la imagen */
 }
 .btnCopiar{
-    width: 336px;
+    width: 90%;
+    text-align: center;
 }
 
 .btnDesencriptar:active, .btnCopiar:active  {
@@ -87,7 +97,36 @@ html{
     text-align: center;
     color: #0A3871;
 }
+.container {
+    display: flex;
+}
 
+#textosBotones{
+    flex: 70%;
+    height: 100vh;
+}
+#textoSalida{
+    flex: 30%;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 32px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
+        /* Cambia los valores según necesites 400x 944*/
+    width: 100%;
+        /* Ancho de la imagen */
+    height: 70vh;
+        /* Alto de la imagen */
+}
+
+#textoMensaje{
+    width: 70%;
+    background-color: transparent;
+    border: none;
+}
+
+.botones{
+    margin-top: 30vh;
+}
 
 /* es necesrio definir 3 tipos de estilos para cada tipo de pantalla
 /* CASO 1: PANTALLAS GRANDES
