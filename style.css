@@ -155,5 +155,16 @@ html{
 }
 /* es necesrio definir 3 tipos de estilos para cada tipo de pantalla
 /* CASO 1: PANTALLAS GRANDES
-/* CASO 2: TABLETS
-/* CASO 3: CELULAR
+/************* CASO 2: TABLETS ********************/
+/* Media query para tabletas (por ejemplo, ancho de pantalla de hasta 768px) */
+@media only screen and (max-width: 768px) {
+    /* Estilos específicos para tabletas */
+    .muneco {
+        display: none;
+    }
+}
+/************** CASO 3: CELULAR ***********************/
+/* Media query para teléfonos móviles (por ejemplo, ancho de pantalla de hasta 480px) */
+@media only screen and (max-width: 480px) {
+    /* Estilos específicos para teléfonos móviles */
+}
