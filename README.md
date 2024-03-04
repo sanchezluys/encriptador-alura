@@ -21,7 +21,7 @@
 - [] Validaciones
   - [x] Solo minúsculas
   - [x] Solo letras, nada de caracteres
-  - [ ] No aceptar encriptación de frase vacía
+  - [x] No aceptar encriptación de frase vacía
 - [ ] Responsivo
   - [x] Versión desktop Grande
   - [ ] Versión desktop Mediano
@@ -38,7 +38,7 @@
   - [x] Favicon con imagen de Sonix
   - [ ] Efectos en botones al pasar por ellos
   - [x] Se agrega indicador de tamaño de pantalla en el foot
-  - [ ] 
+  - [x] Se agrega la librería sweet alert, para mejorar visualmente las alertas
 
 
 Versiones:
@@ -60,6 +60,9 @@ Versiones:
 | `inicializar()`   | Inicializa la vista HTML     |
 | `copiarPortapapeles()`   | Copia en resultado de la encriptación o desencriptación en el portapapeles del navegador     |
 | `validarTexto(elemento)`   | Válida y solo permite letras minúsculas, sin acentos ni caracteres especiales     |
+| `actualizarAnchoPantalla()`   | Calcula el tamaño de la pantalla del usuario, para evaluar el comportamiento responsivo     |
+| `validarVacio(texto)`   | Revisa si el texto ingresado esta vacío, para no realizar encriptación o desencriptación     |
+
 
 ### QR de contacto:
 
