@@ -192,10 +192,10 @@ function actualizarAnchoPantalla()
             tipoPantalla='Escritorio Grande '
             break;
         case ((anchoPantalla < 1441) && (anchoPantalla >= 1201)):
-            tipoPantalla = 'Escritorio Mediano '
+            tipoPantalla = 'Escritorio Mediano FHD '
             break;
         case ((anchoPantalla < 1201) && (anchoPantalla >= 1025)):
-            tipoPantalla = 'Escritorio Mediano '
+            tipoPantalla = 'Escritorio Mediano HD '
             break;
         case ((anchoPantalla < 1025) && (anchoPantalla >= 768)):
             tipoPantalla = 'Tablet en Horizontal '

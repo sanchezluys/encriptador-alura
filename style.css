@@ -175,29 +175,265 @@ html{
     /***********************************/
     /* Estilos para pantallas pequeñas */
     /***********************************/
+        .muneco {
+            display: none;
+        }
+        .logo {
+            display: block;
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        .botones {
+            display: inline;
+            margin-top: 3%;
+            text-align: center;
+        }
+    
+        .btnEncriptar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 80%;
+            margin-top: 5%;
+            margin-left: 4%;
+        }
+    
+        .btnDesencriptar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 80%;
+            margin-top: 4%;
+        }
+    
+        .btnCopiar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 70%;
+        }
+    
+        .mensajeSalidaTitulo {
+            font-size: 1.4em;
+            margin: 5px;
+        }
+    
+        .mensajeSalidaTexto {
+            font-size: 1em;
+            margin: 5px;
+        }
+    
+        .advertencia {
+            margin-left: 15%;
+        }
+    
+        .textoBotones {
+    
+            flex: 100%;
+        }
+    
+        .textoSalida {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 6%;
+            text-align: center;
+        }
+    
+        .titulo {
+            text-align: left;
+            font-size: 1.3em;
+            display: inline;
+            width: 100%;
+        }
+    
+        .textoAencriptar {
+            font-size: 1.5em;
+            text-align: center;
+            width: 80%;
+        }
+    
+        .cuerpoPagina {
+            display: inline;
+        }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     /*************************************************/
     /* Estilos para tabletas en orientación vertical */
     /*************************************************/
-    .muneco {
+        .muneco {
             display: none;
+        }
+        .botones {
+            margin-top: 3%;
+        }
+        .btnEncriptar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 30%;
+        }
+        .btnDesencriptar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 30%;
+        }
+        .btnCopiar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 70%;
+        }
+        .mensajeSalidaTitulo {
+            font-size: 1.4em;
+            margin: 5px;
+        }
+        .mensajeSalidaTexto {
+            font-size: 1em;
+            margin: 5px;
+        }
+        .advertencia {
+            margin-left: 18%;
+        }
+    
+        .textoBotones {
+            
+            flex: 100%;
+        }
+    
+        .textoSalida {
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 6%;
+            text-align: center;
+        }
+    
+        .titulo {
+            text-align: left;
+            font-size: 1.5em;
+            display: inline;
+            width: auto;
+        }
+        .textoAencriptar {
+            font-size: 1.4em;
+            text-align: center;
+        }
+        .cuerpoPagina{
+            display: inline;
         }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     /*************************************************/
     /* Estilos para pantallas de escritorio pequeñas */
     /*************************************************/
+    .botones {
+            margin-top: 2%;
+        }
+    
+        .btnEncriptar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 30%;
+        }
+    
+        .btnDesencriptar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 30%;
+        }
+    
+        .muneco {
+            width: 60%;
+            height: 60%;
+            margin: 50px;
+            padding: 10px;
+        }
+    
+        .btnCopiar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 70%;
+        }
+    
+        .mensajeSalidaTitulo {
+            font-size: 20px;
+            margin: 5px;
+        }
+    
+        .mensajeSalidaTexto {
+            font-size: 12px;
+            margin: 5px;
+        }
+    
+        .advertencia {
+            margin-left: 18%;
+        }
+        .textoBotones{
+            flex: 40%;
+        }
+        .textoSalida{
+            flex: 10%;
+        }
+        .titulo {
+            text-align: left;
+            font-size: 1.6em;
+            display: inline;
+            width: auto;
+        }
+        .textoAencriptar {
+            font-size: 1.5em;
+            text-align: center;
+        }
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1440px) {
     /*************************************************/
     /* Estilos para pantallas de escritorio medianas */
-    /*************************************************/
+    .botones {
+            margin-top: 2%;
+        }
+    .btnEncriptar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 40%;
+            
+        }
+    .btnDesencriptar{
+            display: inline;
+            font-size: 16px;
+            height: 60px;                /* Alto de 67px */
+            width: 40%;                /* Largo de 328px */
+        }
+    .muneco {
+        width: 60%;
+        height: 60%;
+        margin: 50px;
+        padding: 10px;
+    }
+    .btnCopiar {
+            display: inline;
+            font-size: 16px;
+            height: 60px;
+            width: 70%;
+        }
+    .mensajeSalidaTitulo {
+        font-size: 20px;
+        margin: 5px;
+    }
+    .mensajeSalidaTexto {
+        font-size: 12px;
+        margin: 5px;
+    }
+    .advertencia {
+        margin-left: 10%;
+    }
 }
-
 @media only screen and (min-width: 1441px) {
     /************************************************/
     /* Estilos para pantallas de escritorio grandes */
@@ -205,5 +441,8 @@ html{
     .advertencia {
             margin-left: 25%;
         }
+    .textoSalida{
+        margin: 2%;
+    }
 }
 
