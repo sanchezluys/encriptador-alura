@@ -23,9 +23,12 @@
   - [x] Solo letras, nada de caracteres
   - [ ] No aceptar encriptación de frase vacía
 - [ ] Responsivo
-  - [x] Versión desktop
-  - [ ] Versión Tablet
+  - [x] Versión desktop Grande
+  - [ ] Versión desktop Mediano
+  - [ ] Versión Tablet Horizontal
+  - [ ] Versión Tablet Vertical
   - [ ] Versión celular
+  - [ ] Versión celular pequeño
 - [x] Estilos de acuerdo al diseño en Figma
   - [x] Colores de fondo
   - [x] Formas
