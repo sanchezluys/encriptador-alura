@@ -146,6 +146,11 @@ html{
 .botones{
     margin-top: 10%;
 }
+.btnEncriptar:hover, .btnDesencriptar:hover, .btnCopiar:hover {
+    
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
 /*** FOOTER *******/
 /**********************/
 .rodapie {

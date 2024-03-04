@@ -4,7 +4,6 @@
     Proyecto: encriptador
     archivo: README.md
 -->
-
 # Challenger Alura Encripta G6 One Next Education Oracle
 
 ![](https://raw.githubusercontent.com/sanchezluys/encriptador-alura/main/images/Logodesktop.png)
@@ -18,7 +17,7 @@
 - [x] Partes de la vista funcionales
   - [x] Campo de entrada de texto
   - [x] Campo de salida del texto encriptado
-- [] Validaciones
+- [x] Validaciones
   - [x] Solo minúsculas
   - [x] Solo letras, nada de caracteres
   - [x] No aceptar encriptación de frase vacía
@@ -36,8 +35,8 @@
   - [x] Estilo de botones
 - [ ] Extras
   - [x] Favicon con imagen de Sonix
-  - [ ] Efectos en botones al pasar por ellos
-  - [x] Se agrega indicador de tamaño de pantalla en el foot
+  - [x] Efectos en botones al pasar por ellos
+  - [x] Se agrega indicador de tamaño de pantalla en el pie de página
   - [x] Se agrega la librería sweet alert, para mejorar visualmente las alertas
 
 
