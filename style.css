@@ -153,18 +153,52 @@ html{
     color: #0A3871;
     margin-top: 2%;
 }
-/* es necesrio definir 3 tipos de estilos para cada tipo de pantalla
-/* CASO 1: PANTALLAS GRANDES
-/************* CASO 2: TABLETS ********************/
-/* Media query para tabletas (por ejemplo, ancho de pantalla de hasta 768px) */
-@media only screen and (max-width: 768px) {
-    /* Estilos específicos para tabletas */
-    .muneco {
-        display: none;
-    }
+.anchoPantalla {
+    text-align: center;
+    color: #0A3871;
+    display: block;
 }
-/************** CASO 3: CELULAR ***********************/
-/* Media query para teléfonos móviles (por ejemplo, ancho de pantalla de hasta 480px) */
+/************* CASOS RESPONSIVOS ********************/
+/***************************************************/
 @media only screen and (max-width: 480px) {
+    /*********************************************/
     /* Estilos específicos para teléfonos móviles */
+    /**********************************************/
 }
+
+@media only screen and (max-width: 576px) {
+    /***********************************/
+    /* Estilos para pantallas pequeñas */
+    /***********************************/
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    /*************************************************/
+    /* Estilos para tabletas en orientación vertical */
+    /*************************************************/
+    .muneco {
+            display: none;
+        }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /*************************************************/
+    /* Estilos para pantallas de escritorio pequeñas */
+    /*************************************************/
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+    /*************************************************/
+    /* Estilos para pantallas de escritorio medianas */
+    /*************************************************/
+}
+
+@media only screen and (min-width: 1441px) {
+    /************************************************/
+    /* Estilos para pantallas de escritorio grandes */
+    /************************************************/
+    .advertencia {
+            margin-left: 25%;
+        }
+}
+

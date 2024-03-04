@@ -21,7 +21,7 @@
 - [] Validaciones
   - [x] Solo minúsculas
   - [x] Solo letras, nada de caracteres
-  - [ ] No aceptar encriptacion de frase vacia
+  - [ ] No aceptar encriptación de frase vacía
 - [ ] Responsivo
   - [x] Versión desktop
   - [ ] Versión Tablet
@@ -32,9 +32,9 @@
   - [x] Tipos de letras
   - [x] Estilo de botones
 - [ ] Extras
-  - [x] Favicon Sonix
+  - [x] Favicon con imagen de Sonix
   - [ ] Efectos en botones al pasar por ellos
-  - [ ] 
+  - [x] Se agrega indicador de tamaño de pantalla en el foot
   - [ ] 
 
 

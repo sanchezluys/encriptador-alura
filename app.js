@@ -158,3 +158,45 @@ function validarTexto(elemento) {
     var textoSoloMinusculas = textoSinAcentos.toLowerCase().replace(/[^a-z\s]/g, ""); // Remueve caracteres especiales excepto espacios y convierte a minúsculas
     elemento.value = textoSoloMinusculas; // Actualiza el valor del textarea
 }
+
+// Función para actualizar el ancho de la pantalla en la página
+function actualizarAnchoPantalla() {
+    var anchoPantalla = window.innerWidth;
+    var tipoPantalla='desconocido'; 
+    switch (true) {
+        case (anchoPantalla >= 1441):
+            tipoPantalla='Escritorio Grande '
+            break;
+        case ((anchoPantalla < 1441) && (anchoPantalla >= 1201)):
+            tipoPantalla = 'Escritorio Mediano '
+            break;
+        case ((anchoPantalla < 1201) && (anchoPantalla >= 1025)):
+            tipoPantalla = 'Escritorio Mediano '
+            break;
+        case ((anchoPantalla < 1025) && (anchoPantalla >= 768)):
+            tipoPantalla = 'Tablet en Horizontal '
+            break;
+        case ((anchoPantalla < 768) && (anchoPantalla >= 577)):
+            tipoPantalla = 'Tablet en Vertical '
+            break;
+        case ((anchoPantalla < 577) && (anchoPantalla >= 480)):
+            tipoPantalla = 'Celulares '
+            break;
+        case ((anchoPantalla < 480)):
+            tipoPantalla = 'Celular Pequeño  '
+            break;
+    
+        default:
+            tipoPantalla='Desconocido'
+            break;
+    }
+    document.getElementById('anchoPantalla').textContent = 'Display ' + tipoPantalla + anchoPantalla;
+}
+
+// Llama a la función para actualizar el ancho de la pantalla cuando la ventana cambia de tamaño
+window.addEventListener('resize', actualizarAnchoPantalla);
+
+// Llama a la función una vez al cargar la página para mostrar el ancho inicial de la pantalla
+window.onload = function () {
+    actualizarAnchoPantalla();
+};
