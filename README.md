@@ -21,7 +21,7 @@
   - [x] Solo minúsculas
   - [x] Solo letras, nada de caracteres
   - [x] No aceptar encriptación de frase vacía
-- [ ] Responsivo
+- [x] Responsivo
   - [x] Versión desktop Grande
   - [x] Versión desktop Mediano
   - [x] Versión Tablet Horizontal
