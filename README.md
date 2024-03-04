@@ -23,17 +23,17 @@
   - [x] No aceptar encriptación de frase vacía
 - [ ] Responsivo
   - [x] Versión desktop Grande
-  - [ ] Versión desktop Mediano
-  - [ ] Versión Tablet Horizontal
-  - [ ] Versión Tablet Vertical
-  - [ ] Versión celular
-  - [ ] Versión celular pequeño
+  - [x] Versión desktop Mediano
+  - [x] Versión Tablet Horizontal
+  - [x] Versión Tablet Vertical
+  - [x] Versión celular
+  - [x] Versión celular pequeño
 - [x] Estilos de acuerdo al diseño en Figma
   - [x] Colores de fondo
   - [x] Formas
   - [x] Tipos de letras
   - [x] Estilo de botones
-- [ ] Extras
+- [x] Extras
   - [x] Favicon con imagen de Sonix
   - [x] Efectos en botones al pasar por ellos
   - [x] Se agrega indicador de tamaño de pantalla en el pie de página
