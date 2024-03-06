@@ -38,6 +38,9 @@
   - [x] Efectos en botones al pasar por ellos
   - [x] Se agrega indicador de tamaño de pantalla en el pie de página
   - [x] Se agrega la librería sweet alert, para mejorar visualmente las alertas
+- [x] Busg y errores corregidos
+  - [ ] Lógica de desencriptar entra en falla con la palabra james o jaimes
+  - [ ] Existen variables declaradas como var
 
 
 Versiones:

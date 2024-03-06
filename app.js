@@ -97,9 +97,13 @@ function encriptar(fraseEncriptada)
     return fraseEncriptada;
 };
 function desencriptar(fraseEncriptada) {
+    console.log('entre a desencriptar la palabra: ',fraseEncriptada);
     for (let i = 0; i < matriz.length; i++) {
         console.log(`Barriendo la matriz, i=${i}`);
+
+        console.log('revisando matriz dato: ', matriz[i][1]);
         if (fraseEncriptada.includes(matriz[i][1])) {
+            console.log(fraseEncriptada.includes(matriz[i][1]));
             fraseEncriptada = fraseEncriptada.replaceAll(
                 matriz[i][1],
                 matriz[i][0]
