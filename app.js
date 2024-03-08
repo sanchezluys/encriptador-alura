@@ -145,6 +145,9 @@ function inicializar(){
     // se inicializa el rodapie
     rodapie = document.getElementById('rodapie');
     rodapie.textContent = '\u00A9' + " Copyleft Luis Sánchez sanchezluys 2024 v:" + version;
+
+    nombrePestaña = document.getElementById('tituloPestaña');
+    nombrePestaña.textContent = ".:: Encriptador V-" + version +" ::.";
     // se inicializa el texto titulo de salida
     textoSalidaTitulo = document.getElementById('mensajeSalidaTitulo');
     textoSalidaTitulo.textContent = "Ningún mensaje fué encontrado";
