@@ -8,6 +8,7 @@
 /******************************** */
 const campoTexto    =   document.querySelector("#textoAencriptar");
 const campoMensaje  =   document.querySelector("#textoMensaje");
+const version       =   '1.0.2';
 /********************************* */
 /**** SE INICIALIZA LA VISTA **** */
 /******************************** */
@@ -143,7 +144,7 @@ function inicializar(){
     titulo.textContent = "⚠️ Solo se aceptan letras minúsculas, sin acentos ni carácteres especiales ";
     // se inicializa el rodapie
     rodapie = document.getElementById('rodapie');
-    rodapie.textContent = '\u00A9' + " Copyleft Luis Sánchez sanchezluys 2024";
+    rodapie.textContent = '\u00A9' + " Copyleft Luis Sánchez sanchezluys 2024 v:" + version;
     // se inicializa el texto titulo de salida
     textoSalidaTitulo = document.getElementById('mensajeSalidaTitulo');
     textoSalidaTitulo.textContent = "Ningún mensaje fué encontrado";
