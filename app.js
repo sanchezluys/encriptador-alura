@@ -65,7 +65,7 @@ function btnDesencriptar()
     }
     else 
     {
-        const texto = desencriptar(campoTexto.value);
+        const texto = desencriptar2(campoTexto.value);
         console.log(texto);
         campoMensaje.value = texto;
         campoMensaje.hidden = false;
@@ -112,6 +112,16 @@ function desencriptar(fraseEncriptada) {
     }
     return fraseEncriptada;
 };
+function desencriptar2(stringDesencriptada) {
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    stringDesencriptada = stringDesencriptada.toLowerCase()
+    for (let i = matrizCodigo.length - 1; i >= 0; i--) {
+        if (stringDesencriptada.includes(matrizCodigo[i][1])) {
+            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
+        }
+    }
+    return stringDesencriptada
+}
 function inicializar(){
     // cada vez que inicialice se hacen los ajustes
     // limpiamos lo dos campos de texto

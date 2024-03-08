@@ -39,16 +39,17 @@
   - [x] Se agrega indicador de tamaño de pantalla en el pie de página
   - [x] Se agrega la librería sweet alert, para mejorar visualmente las alertas
 - [x] Busg y errores corregidos
-  - [ ] Lógica de desencriptar entra en falla con la palabra james o jaimes
+  - [x] Lógica de desencriptar entra en falla con la palabra james o jaimes
   - [ ] Existen variables declaradas como var
 
 
 Versiones:
 
-    | Número        |  Fecha        | Observaciones                           |
-    | ------------- | ------------- | ----------------------------------      |   
-    | 1.0.1         | 3/03/2024     | tiene bugs en desencriptar              |
-    | 1.0           | 2/03/2024     |                                         |
+    | Número        |  Fecha        | Observaciones                                                 |
+    | ------------- | ------------- | ---------------------------------------------------           | 
+    | 1.0.2         | 8/03/2024     | se usa funcion desencriptar2(), queda en pruebas              |  
+    | 1.0.1         | 3/03/2024     | tiene bugs en desencriptar                                    |
+    | 1.0           | 2/03/2024     |                                                               |
     
 
 
@@ -58,7 +59,8 @@ Versiones:
 | Nombre de la Función | Descripción                    |
 | ------------- | ------------------------------ |
 | `encriptar()`      | Encripta el mensaje.       |
-| `desencriptar()`   | Desencripta el Mensaje     |
+| `desencriptar()`   | Desencripta el Mensaje, presenta bug con "jaime" o "james"     |
+| `desencriptar2()`   | Desencripta el Mensaje, se corrige el error    |
 | `inicializar()`   | Inicializa la vista HTML     |
 | `copiarPortapapeles()`   | Copia en resultado de la encriptación o desencriptación en el portapapeles del navegador     |
 | `validarTexto(elemento)`   | Válida y solo permite letras minúsculas, sin acentos ni caracteres especiales     |
